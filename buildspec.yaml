@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-version: 3
-=======
 version: 0.2
->>>>>>> change yaml file
 services:
   nilesh:
     install:
