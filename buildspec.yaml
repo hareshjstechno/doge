@@ -1,5 +1,17 @@
+<<<<<<< HEAD
 version: 3
+=======
+version: 0.2
+>>>>>>> change yaml file
 services:
   nilesh:
+    install:
+      runtime-versions:
+      docker: 18
     build: ./
     command: python3 docrun.py
+# version: 0.2
+#       phases:
+#         install:
+#          runtime-versions:
+#          docker: 18
