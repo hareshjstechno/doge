@@ -1,0 +1,18 @@
+version: "3.2"
+services:
+  autospotting:
+    build:
+      context: .
+      dockerfile: Dockerfile-build
+    environment:
+      - FLAVOR=${FLAVOR:-nightly}
+      - CGO_ENABLED=0
+      - COVERALLS_TOKEN
+      - TRAVIS_BUILD_NUMBER
+    entrypoint:
+      - make
+      - ci
+    volumes:
+      - type: bind
+        source: ./build
+        target: /src/build
