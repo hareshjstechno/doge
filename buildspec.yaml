@@ -8,7 +8,9 @@ services:
     command: python3 docrun.py
 artifacts:
   files:
-    '**/*'
+    - "**/*"
+  name: "web-dist-${env}"
+  base-directory: build
 # version: 0.2
 #       phases:
 #         install:
