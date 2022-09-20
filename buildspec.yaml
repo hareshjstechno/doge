@@ -6,6 +6,9 @@ services:
       docker: 18
     build: ./
     command: python3 docrun.py
+artifacts:
+  files:
+    - '**/*'
 # version: 0.2
 #       phases:
 #         install:
