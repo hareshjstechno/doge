@@ -8,8 +8,7 @@ services:
     command: python3 docrun.py
 artifacts:
   files:
-    - "**/*"
-  base-directory: build
+    - ./
 # version: 0.2
 #       phases:
 #         install:
