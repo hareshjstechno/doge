@@ -8,7 +8,7 @@ services:
     command: python3 docrun.py
 artifacts:
   files:
-    - '**/*'
+    '**/*'
 # version: 0.2
 #       phases:
 #         install:
